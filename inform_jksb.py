@@ -3,7 +3,7 @@ import requests
 from util import read_json
 
 config = read_json()
-wxsend_key = config[0]["wxsend_key"]
+wxsend_key = os.environ['TG_BOT_TOKEN']
 
 
 def send_result(result):
