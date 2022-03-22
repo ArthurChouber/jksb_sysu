@@ -38,7 +38,6 @@ def jksb():
 
 
     log.get_logger().info("读取用户名密码")
-    data = read_json()
     username = os.environ['NETID']
     password = os.environ['PASSWORD']
 
