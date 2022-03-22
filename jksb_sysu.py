@@ -11,7 +11,7 @@ from retrying import retry
 import platform
  
 if platform.system().lower() == 'windows':
-    driver_path = os.getcwd()+"//geckodriver.exe"
+    driver_path = "D:/a/_actions/ArthurChouber/jksb_sysu/master/"+"//geckodriver.exe"
     print("windows")
 elif platform.system().lower() == 'linux':
     driver_path = os.getcwd()+"//geckodriver"
