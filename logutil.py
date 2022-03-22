@@ -9,7 +9,7 @@ class LogUtil:
         self.logger.setLevel(logging.DEBUG)
 
         #创建一个handler，用于写入日志文件
-        log_path = "D:/a/_actions/ArthurChouber/jksb_sysu/master/"+"logs/" # 指定文件输出路径，注意logs是个文件夹，一定要加上/，不然会导致输出路径错误，把logs变成文件名的一部分了
+        log_path = os.getcwd()+"logs/" # 指定文件输出路径，注意logs是个文件夹，一定要加上/，不然会导致输出路径错误，把logs变成文件名的一部分了
         logname = log_path + 'out.log' #指定输出的日志文件名
         fh = logging.FileHandler(logname,encoding = 'utf-8')  # 指定utf-8格式编码，避免输出的日志文本乱码
         fh.setLevel(logging.DEBUG)
