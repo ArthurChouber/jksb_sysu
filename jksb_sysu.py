@@ -40,8 +40,8 @@ def jksb():
 
     log.get_logger().info("读取用户名密码")
     data = read_json()
-    username = data[0]["username"]
-    password = data[0]["password"]
+    username = os.environ['NETID']
+    password = os.environ['PASSWORD']
 
 
     step = 1 #读取用户名密码成功
