@@ -6,7 +6,6 @@ from selenium.webdriver.firefox.options import Options
 import os
 import ddddocr
 import time
-from util import read_json
 from apscheduler.schedulers.blocking import BlockingScheduler
 from retrying import retry
 import platform
