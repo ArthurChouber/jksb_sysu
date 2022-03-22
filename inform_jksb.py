@@ -1,8 +1,5 @@
 import requests
 
-from util import read_json
-
-config = read_json()
 wxsend_key = os.environ['TG_BOT_TOKEN']
 
 
