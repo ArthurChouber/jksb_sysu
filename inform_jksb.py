@@ -1,4 +1,5 @@
 import requests
+import os
 
 wxsend_key = os.environ['TG_BOT_TOKEN']
 
