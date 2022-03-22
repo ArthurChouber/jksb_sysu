@@ -55,7 +55,7 @@ def jksb():
     step = 3 #识别验证码成功
     
     log.get_logger().info("输入验证码")
-    driver.find_element(By.XPATH, '//*[@id="captcha"]').send_keys(res)
+    driver.find_element_by_xpath('//*[@id="captcha"]').send_keys(res)
     step = 4 #输入验证码成功
 
     # 点击登录按钮
